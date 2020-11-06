@@ -1,6 +1,7 @@
 const express = require("express")
 const cors = require("cors")
 const dotenv = require("dotenv")
+const sql = require("mssql")
 var app = require('express')()
 
 dotenv.config();
@@ -20,7 +21,7 @@ var dbConfig = {
     driver: "tedious",
     stream: false,
     options: {
-        appName: 'ApiTeste',
+        appName: 'ApiExercicioFacudlade',
         encrypt: false
     },
     pool: {
@@ -36,8 +37,9 @@ sql.connect(dbConfig).then(pool => {
     }
 
     if (pool.connected) {
-        app.listen(process.env.PORT);
-        console.log('server started on port '+process.env.PORT)
+        app.listen(process.env.PORT, () => {
+          console.log(`server listening at http://localhost:${process.env.PORT}`)
+        });
     }
 
     return pool
