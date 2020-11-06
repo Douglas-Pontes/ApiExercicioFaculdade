@@ -1,0 +1,25 @@
+{
+  "name": "apiparaexerciciofaculdade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Douglas-Pontes/ApiExercicioFaculdade.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "webservices",
+    "expressjs"
+  ],
+  "author": "Douglas-Pontes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Douglas-Pontes/ApiExercicioFaculdade/issues"
+  },
+  "homepage": "https://github.com/Douglas-Pontes/ApiExercicioFaculdade#readme"
+}
